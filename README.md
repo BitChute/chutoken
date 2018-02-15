@@ -6,8 +6,6 @@ Copyright (c) 2017 - 2018, The Chutoken Project
 
 Copyright (c) 2014-2018, The Monero Project
 
-Portions Copyright (c) 2016-2018, The Graft Project
-
 Portions Copyright (c) 2012-2013, The Cryptonote developers
 
 ## Development Resources
@@ -15,7 +13,6 @@ Portions Copyright (c) 2012-2013, The Cryptonote developers
 - Web: [Chutoken](https://www.chutoken.com)
 - GitHub: [https://github.com/chutoken/Chutoken](https://github.com/chutoken/Chutoken)
 - Monero GitHub: [https://github.com/monero-project/monero](https://github.com/monero-project/monero)
-- Graft Network GitHub: [https://github.com/graft-project/GraftNetwork](https://github.com/graft-project/GraftNetwork)
 
 ## Coverage
 
