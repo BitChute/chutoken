@@ -8,10 +8,10 @@ Group=monero
 WorkingDirectory=~
 
 Type=forking
-PIDFile=/var/run/monerod.pid
+PIDFile=/var/run/chutokend.pid
 
-ExecStart=/usr/bin/monerod --config-file /etc/monerod.conf \
-    --detach --pidfile /var/run/monerod.pid
+ExecStart=/usr/bin/chutokend --config-file /etc/chutokend.conf \
+    --detach --pidfile /var/run/chutokend.pid
 
 [Install]
 WantedBy=multi-user.target

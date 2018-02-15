@@ -9,23 +9,23 @@ grade: devel
 confinement: strict
 
 apps:
-    monerod:
+    chutokend:
         daemon: forking
         command: |
-          monerod-wrapper --detach --data-dir ${SNAP_COMMON} --config-file ${SNAP_USER_DATA}/etc/monerod.conf
+          chutokend-wrapper --detach --data-dir ${SNAP_COMMON} --config-file ${SNAP_USER_DATA}/etc/chutokend.conf
         plugs:
             - network
             - network-bind
-    monero-wallet-rpc:
+    chutoken-wallet-rpc:
         command: |
-          monero-wallet-rpc --log-file ${SNAP_USER_DATA}
+          chutoken-wallet-rpc --log-file ${SNAP_USER_DATA}
         plugs:
             - home
             - network
             - network-bind
-    monero-wallet-cli:
+    chutoken-wallet-cli:
         command: |
-          monero-wallet-cli --log-file ${SNAP_USER_DATA}
+          chutoken-wallet-cli --log-file ${SNAP_USER_DATA}
         plugs:
             - home
             - network
@@ -68,8 +68,8 @@ parts:
         plugin: dump
         source: .
         organize:
-            contrib/snap/monerod.conf: etc/monerod.conf
-            contrib/snap/monerod-wrapper: bin/monerod-wrapper
+            contrib/snap/chutokend.conf: etc/chutokend.conf
+            contrib/snap/chutokend-wrapper: bin/chutokend-wrapper
         prime:
             - etc
             - bin

@@ -47,7 +47,7 @@ add_dependencies(cn_deserialize
 	version)
 set_property(TARGET cn_deserialize
 	PROPERTY
-	OUTPUT_NAME "monero-utils-deserialize")
+	OUTPUT_NAME "chutoken-utils-deserialize")
 
 
 set(object_sizes_sources
@@ -70,5 +70,5 @@ add_dependencies(object_sizes
 	version)
 set_property(TARGET object_sizes
 	PROPERTY
-	OUTPUT_NAME "monero-utils-object-sizes")
+	OUTPUT_NAME "chutoken-utils-object-sizes")
 
