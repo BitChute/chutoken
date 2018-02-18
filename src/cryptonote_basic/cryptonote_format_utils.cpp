@@ -549,7 +549,6 @@ namespace cryptonote
   //---------------------------------------------------------------
   std::string get_unit(unsigned int decimal_point)
   {
-    return "chutoken";
     if (decimal_point == (unsigned int)-1)
       decimal_point = default_decimal_point;
     switch (std::atomic_load(&default_decimal_point))
